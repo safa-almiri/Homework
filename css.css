@@ -1,0 +1,28 @@
+body {
+    background: rgba(39, 34, 34, 0.986);
+  }
+  
+  .container {
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+  }
+  
+.white {
+    position: relative;
+    background: rgb(241, 240, 240);
+    width: 10%;
+    height: 400px;
+    margin: 0 2px;
+  }
+  
+  .white.black:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    background: rgb(17, 11, 11);
+    right: -25%;
+    width: 50%;
+    height: 50%;
+    z-index: 1;
+  }
